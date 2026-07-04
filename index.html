@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>soravo</title>
+<meta name="description" content="soravo — 작고 단단한 도구를 만드는 1인 스튜디오">
+<style>
+  :root { --brand: #0D9488; --ink: #1a1a1a; --sub: #6b7280; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Segoe UI", sans-serif;
+    color: var(--ink); background: #fafafa;
+    display: flex; min-height: 100vh; align-items: center; justify-content: center;
+    padding: 24px;
+  }
+  main { max-width: 480px; width: 100%; }
+  .logo { font-size: 28px; font-weight: 700; letter-spacing: -0.5px; }
+  .logo span { color: var(--brand); }
+  .tagline { color: var(--sub); margin-top: 6px; font-size: 15px; }
+  .card {
+    margin-top: 28px; background: #fff; border: 1px solid #e5e7eb;
+    border-radius: 16px; padding: 20px; display: flex; gap: 16px; align-items: center;
+    text-decoration: none; color: inherit; transition: box-shadow .15s ease;
+  }
+  .card:hover { box-shadow: 0 4px 16px rgba(13,148,136,.12); }
+  .appicon {
+    width: 56px; height: 56px; border-radius: 13px; background: var(--brand);
+    display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+  }
+  .appicon svg { width: 32px; height: 32px; }
+  .appname { font-weight: 600; font-size: 17px; }
+  .appdesc { color: var(--sub); font-size: 14px; margin-top: 2px; }
+  footer { margin-top: 32px; font-size: 13px; color: var(--sub); }
+  footer a { color: var(--sub); }
+</style>
+</head>
+<body>
+<main>
+  <h1 class="logo">sora<span>vo</span></h1>
+  <p class="tagline">작고 단단한 도구를 만듭니다.</p>
+
+  <a class="card" href="https://apps.apple.com/kr/app/nowtodo/id6786571660">
+    <div class="appicon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M20 6 9 17l-5-5"/>
+      </svg>
+    </div>
+    <div>
+      <div class="appname">NowTodo</div>
+      <div class="appdesc">잠금화면에서 끝내는 오늘 할 일 · iPhone</div>
+    </div>
+  </a>
+
+  <footer>
+    <a href="https://soravoapp.github.io/nowtodo-legal/privacy.html">개인정보 처리방침</a> ·
+    <a href="https://soravoapp.github.io/nowtodo-legal/terms.html">이용약관</a> ·
+    <a href="mailto:soravo.app@gmail.com">soravo.app@gmail.com</a><br>
+    © 2026 soravo
+  </footer>
+</main>
+</body>
+</html>
